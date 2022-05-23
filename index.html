@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>one dimension escape game</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="ic.png">
+    <meta name="viewport"
+        content="width=device-width,height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./../el/css/ga.css">
+    <link rel="stylesheet" href="./../el/css/anim.css">
+</head>
+
+<body>
+    <div style="min-height:10px"></div>
+    Level: <span id="level">Tutorial</span>
+    <div style="min-height:5px"></div>
+    <canvas id="canvas2d"></canvas>
+    <div style="min-height:10px"></div>
+
+    <canvas id="canvas1d"></canvas>
+    <div id="buttonContainer">
+        <div class="button" id="buttonS">
+            <div class="button-label">shoot</div>
+            <div class="button-icon">⦻</div>
+        </div>
+        <div class="button" id="buttonF">
+            <div class="button-label">move forward</div>
+            <div class="button-icon">▲</div>
+        </div>
+        <br>
+        <div class="button" id="buttonL">
+            <div class="button-icon">↶</div>
+            <div class="button-label">turn left</div>
+        </div>
+        <div class="button" id="buttonR">
+            <div class="button-icon">↷</div>
+            <div class="button-label">turn right</div>
+        </div>
+        <div class="button" id="buttonB">
+            <div class="button-icon">▼</div>
+            <div class="button-label">move back</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <input type="checkbox" id="anaglyph">
+    <label for="anaglyph">3D Visual ( best when u have 3D glasses )</label>
+    <br>
+    <input type="checkbox" id="show2d">
+    <label for="show2d">Enable 2D Map</label>
+    <br>
+    <input type="checkbox" id="bigPicture">
+    <label for="bigPicture">Big Display</label>
+    <br>
+    <label for="quality">Render Quality (fps)</lable>
+        <input type="range" min="1" max="10" value="10" class="slider" id="quality">
+        <br>
+        <span>Themes marked "3D" are Optimised for 3D Visual.</span>
+        <br>
+
+        <label for="texture">Dimension Theme</label>
+        <select id="texture">
+            <option value="0">Gray Flash(3D)</option>
+            <option value="1">Blue-Green</option>
+            <option value="2">Colourful (eye sensitive)</option>
+            <option value="3">Gray Flash(3D)</option>
+            <option value="4" selected>Yellow Flash (3D)</option>
+            <option value="5">Red Cave</option>
+            <option value="6">Barcode (3D)</option>
+        </select>
+        <br>
+        <br>
+        <div id="controls">Use W&nbsp;A&nbsp;S&nbsp;D or arrow keys to move.<br> Space, Z, or X to shoot.</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <script src="script.js"></script>
+        <script src="f11.js"></script>
+
+</body>
+
+</html>
